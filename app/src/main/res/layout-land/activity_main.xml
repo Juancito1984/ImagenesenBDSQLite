@@ -8,6 +8,7 @@
     android:padding="10dp"
     tools:context=".MainActivity">
 
+
     <EditText
         android:id="@+id/etNombre"
         android:layout_width="match_parent"
@@ -23,7 +24,7 @@
         android:inputType="textPersonName" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15dp"
@@ -44,22 +45,31 @@
             android:layout_height="wrap_content"
             android:text="Cargar Imagen" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnAgregarABD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:text="Agregar a BD" />
+
+            <Button
+                android:id="@+id/btnMostrarLista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Mostrar lista" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
 
-    <Button
-        android:id="@+id/btnAgregarABD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="25dp"
-        android:text="Agregar a BD" />
 
-    <Button
-        android:id="@+id/btnMostrarLista"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:text="Mostrar lista" />
 </LinearLayout>

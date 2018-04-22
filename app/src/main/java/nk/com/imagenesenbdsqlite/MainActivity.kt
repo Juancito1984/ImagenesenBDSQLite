@@ -45,10 +45,18 @@ class MainActivity : AppCompatActivity() {
                 )
 
                 alerta(this, "Agregado correctamente")
+
             } catch (e: Exception) {
                 Log.d(INFORMACION, e.toString())
             }
+            etNombre.setText("")
+            eTPrecio.setText("")
+            iVImagen.setImageResource(R.mipmap.ic_launcher)
 
+        }
+
+        btnMostrarLista.setOnClickListener {
+            startActivity(Intent(this, HeladosActivity::class.java))
         }
     }
 
